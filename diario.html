@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet"> 
+    <title>Libro Diario</title>
+</head>
+<body>
+    
+    <form action="">
+        <div class="diario">
+            
+            <div id="partide">
+                <label for="partida" style= "color: #ff5a3c;">#Partida</label>
+                <input type="text" name="partida" id="partida" style= "height: 180px; width: 138px;">
+            </div>
+
+            <div id="date">
+                <label for="fecha" style= "color: #ff5a3c;">Fecha</label>
+                <input type="text" name="fecha" id="fecha" style= "height: 180px;">
+            </div>
+
+            <div id="acount">
+                <label for="cuenta" style= "color: #ff5a3c;">Cuentas</label>
+                <input type="text" name="cuenta" id="cuenta" style="width: 310px; height: 20px; position: absolute; left: 35px;">
+                <input type="text" name="" id="cuenta2" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 23px; ">
+                <input type="text" name="" id="cuenta3" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 46px; ">
+                <input type="text" name="" id="cuenta4" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 69px; ">
+                <input type="text" name="" id="cuenta5" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 92px; ">
+                <input type="text" name="" id="cuenta6" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 115px; ">
+                <input type="text" name="" id="detalle7" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 138px; ">
+                <input type="text" name="" id="total" readonly="readonly" placeholder="TOTAL" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 162px; ">
+            </div>
+
+            <div id="active">
+                <label for="debe" style= "color: #ff5a3c;">Debe</label>
+                <input type="text" name="debe" id="debe" step="0.001" oninput="sumard()">
+                <input type="text" name="" id="debe2" step="0.001" oninput="sumard()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="debe3" step="0.001" oninput="sumard()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="debe4" step="0.001" oninput="sumard()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="debe5" step="0.001" oninput="sumard()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="debe6" step="0.001" oninput="sumard()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="debe7" step="0.001" oninput="sumard()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="debe8" step="0.001" oninput="sumard()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+
+            <div id="pasive">
+                <label for="haber" style= "color: #ff5a3c;">Haber</label>
+                <input type="text" name="haber" id="haber" step="0.001" oninput="sumarh()">
+                <input type="text" name="" id="haber2" step="0.001" oninput="sumarh()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="haber3" step="0.001" oninput="sumarh()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="haber4" step="0.001" oninput="sumarh()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="haber5" step="0.001" oninput="sumarh()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="haber6" step="0.001" oninput="sumarh()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="haber7" step="0.001" oninput="sumarh()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="haber8" step="0.001" oninput="sumarh()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="diarioo">
+            
+            <div id="partidee">
+                <label for="partida" style= "color: #ff5a3c;">#Partida</label>
+                <input type="text" name="partida" id="partidaa" style= "height: 180px; width: 138px;">
+            </div>
+
+            <div id="datee">
+                <label for="fecha" style= "color: #ff5a3c;">Fecha</label>
+                <input type="text" name="fecha" id="fechaa" style= "height: 180px;">
+            </div>
+
+            <div id="acountt">
+                <label for="cuenta" style= "color: #ff5a3c;">Cuentas</label>
+                <input type="text" name="cuenta" id="cuentaa" style="width: 310px; height: 20px; position: absolute; left: 35px;">
+                <input type="text" name="" id="cuentaa2" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 23px; ">
+                <input type="text" name="" id="cuentaa3" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 46px; ">
+                <input type="text" name="" id="cuentaa4" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 69px; ">
+                <input type="text" name="" id="cuentaa5" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 92px; ">
+                <input type="text" name="" id="cuentaa6" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 115px; ">
+                <input type="text" name="" id="detallee7" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 138px; ">
+                <input type="text" name="" id="totall" readonly="readonly" placeholder="TOTAL" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 162px; ">
+            </div>
+
+            <div id="activee">
+                <label for="debe" style= "color: #ff5a3c;">Debe</label>
+                <input type="text" name="debe" id="debee" step="0.001" oninput="sumardd()">
+                <input type="text" name="" id="debee2" step="0.001" oninput="sumardd()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="debee3" step="0.001" oninput="sumardd()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="debee4" step="0.001" oninput="sumardd()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="debee5" step="0.001" oninput="sumardd()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="debee6" step="0.001" oninput="sumardd()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="debee7" step="0.001" oninput="sumardd()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="debee8" step="0.001" oninput="sumardd()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+
+            <div id="pasivee">
+                <label for="haber" style= "color: #ff5a3c;">Haber</label>
+                <input type="text" name="haber" id="haberr" step="0.001" oninput="sumarhh()">
+                <input type="text" name="" id="haberr2" step="0.001" oninput="sumarhh()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="haberr3" step="0.001" oninput="sumarhh()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="haberr4" step="0.001" oninput="sumarhh()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="haberr5" step="0.001" oninput="sumarhh()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="haberr6" step="0.001" oninput="sumarhh()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="haberr7" step="0.001" oninput="sumarhh()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="haberr8" step="0.001" oninput="sumarhh()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="diariooo">
+            
+            <div id="partideee">
+                <label for="partida" style= "color: #ff5a3c;">#Partida</label>
+                <input type="text" name="partida" id="partidaaa" style= "height: 180px; width: 138px;">
+            </div>
+
+            <div id="dateee">
+                <label for="fecha" style= "color: #ff5a3c;">Fecha</label>
+                <input type="text" name="fecha" id="fechaaa" style= "height: 180px;">
+            </div>
+
+            <div id="acounttt">
+                <label for="cuenta" style= "color: #ff5a3c;">Cuentas</label>
+                <input type="text" name="cuenta" id="cuentaaa" style="width: 310px; height: 20px; position: absolute; left: 35px;">
+                <input type="text" name="" id="cuentaaa2" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 23px; ">
+                <input type="text" name="" id="cuentaaa3" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 46px; ">
+                <input type="text" name="" id="cuentaaa4" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 69px; ">
+                <input type="text" name="" id="cuentaaa5" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 92px; ">
+                <input type="text" name="" id="cuentaaa6" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 115px; ">
+                <input type="text" name="" id="detalleee7" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 138px; ">
+                <input type="text" name="" id="totalll" readonly="readonly" placeholder="TOTAL" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 162px; ">
+            </div>
+
+            <div id="activeee">
+                <label for="debe" style= "color: #ff5a3c;">Debe</label>
+                <input type="text" name="debe" id="debeee" step="0.001" oninput="sumarddd()">
+                <input type="text" name="" id="debeee2" step="0.001" oninput="sumarddd()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="debeee3" step="0.001" oninput="sumarddd()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="debeee4" step="0.001" oninput="sumarddd()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="debeee5" step="0.001" oninput="sumarddd()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="debeee6" step="0.001" oninput="sumarddd()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="debeee7" step="0.001" oninput="sumarddd()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="debeee8" step="0.001" oninput="sumarddd()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+
+            <div id="pasiveee">
+                <label for="haber" style= "color: #ff5a3c;">Haber</label>
+                <input type="text" name="haber" id="haberrr" step="0.001" oninput="sumarhhh()">
+                <input type="text" name="" id="haberrr2" step="0.001" oninput="sumarhhh()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="haberrr3" step="0.001" oninput="sumarhhh()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="haberrr4" step="0.001" oninput="sumarhhh()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="haberrr5" step="0.001" oninput="sumarhhh()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="haberrr6" step="0.001" oninput="sumarhhh()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="haberrr7" step="0.001" oninput="sumarhhh()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="haberrr8" step="0.001" oninput="sumarhhh()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+        </div>
+    </form>
+    
+    <form action="">
+        <div class="diarioooo">
+            
+            <div id="partideeee">
+                <label for="partida" style= "color: #ff5a3c;">#Partida</label>
+                <input type="text" name="partida" id="partidaaaa" style= "height: 180px; width: 138px;">
+            </div>
+
+            <div id="dateeee">
+                <label for="fecha" style= "color: #ff5a3c;">Fecha</label>
+                <input type="text" name="fecha" id="fechaaaa" style= "height: 180px;">
+            </div>
+
+            <div id="acountttt">
+                <label for="cuenta" style= "color: #ff5a3c;">Cuentas</label>
+                <input type="text" name="cuenta" id="cuentaaaa" style="width: 310px; height: 20px; position: absolute; left: 35px;">
+                <input type="text" name="" id="cuentaaaa2" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 23px; ">
+                <input type="text" name="" id="cuentaaaa3" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 46px; ">
+                <input type="text" name="" id="cuentaaaa4" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 69px; ">
+                <input type="text" name="" id="cuentaaaa5" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 92px; ">
+                <input type="text" name="" id="cuentaaaa6" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 115px; ">
+                <input type="text" name="" id="detalleeee7" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 138px; ">
+                <input type="text" name="" id="totallll" readonly="readonly" placeholder="TOTAL" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 162px; ">
+            </div>
+
+            <div id="activeeee">
+                <label for="debe" style= "color: #ff5a3c;">Debe</label>
+                <input type="text" name="debe" id="debeeee" step="0.001" oninput="sumardddd()">
+                <input type="text" name="" id="debeeee2" step="0.001" oninput="sumardddd()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="debeeee3" step="0.001" oninput="sumardddd()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="debeeee4" step="0.001" oninput="sumardddd()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="debeeee5" step="0.001" oninput="sumardddd()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="debeeee6" step="0.001" oninput="sumardddd()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="debeeee7" step="0.001" oninput="sumardddd()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="debeeee8" step="0.001" oninput="sumardddd()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+
+            <div id="pasiveeee">
+                <label for="haber" style= "color: #ff5a3c;">Haber</label>
+                <input type="text" name="haber" id="haberrrr" step="0.001" oninput="sumarhhhh()">
+                <input type="text" name="" id="haberrrr2" step="0.001" oninput="sumarhhhh()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="haberrrr3" step="0.001" oninput="sumarhhhh()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="haberrrr4" step="0.001" oninput="sumarhhhh()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="haberrrr5" step="0.001" oninput="sumarhhhh()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="haberrrr6" step="0.001" oninput="sumarhhhh()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="haberrrr7" step="0.001" oninput="sumarhhhh()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="haberrrr8" step="0.001" oninput="sumarhhhh()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="diariooooo">
+            
+            <div id="partideeeee">
+                <label for="partida" style= "color: #ff5a3c;">#Partida</label>
+                <input type="text" name="partida" id="partidaaaaa" style= "height: 180px; width: 138px;">
+            </div>
+
+            <div id="dateeeee">
+                <label for="fecha" style= "color: #ff5a3c;">Fecha</label>
+                <input type="text" name="fecha" id="fechaaaaa" style= "height: 180px;">
+            </div>
+
+            <div id="acounttttt">
+                <label for="cuenta" style= "color: #ff5a3c;">Cuentas</label>
+                <input type="text" name="cuenta" id="cuentaaaaa" style="width: 310px; height: 20px; position: absolute; left: 35px;">
+                <input type="text" name="" id="cuentaaaaa2" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 23px; ">
+                <input type="text" name="" id="cuentaaaaa3" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 46px; ">
+                <input type="text" name="" id="cuentaaaaa4" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 69px; ">
+                <input type="text" name="" id="cuentaaaaa5" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 92px; ">
+                <input type="text" name="" id="cuentaaaaa6" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 115px; ">
+                <input type="text" name="" id="detalleeeee7" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 138px; ">
+                <input type="text" name="" id="totalllll" readonly="readonly" placeholder="TOTAL" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 162px; ">
+            </div>
+
+            <div id="activeeeee">
+                <label for="debe" style= "color: #ff5a3c;">Debe</label>
+                <input type="text" name="debe" id="debeeeee" step="0.001" oninput="sumarddddd()">
+                <input type="text" name="" id="debeeeee2" step="0.001" oninput="sumarddddd()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="debeeeee3" step="0.001" oninput="sumarddddd()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="debeeeee4" step="0.001" oninput="sumarddddd()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="debeeeee5" step="0.001" oninput="sumarddddd()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="debeeeee6" step="0.001" oninput="sumarddddd()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="debeeeee7" step="0.001" oninput="sumarddddd()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="debeeeee8" step="0.001" oninput="sumarddddd()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+
+            <div id="pasiveeeee">
+                <label for="haber" style= "color: #ff5a3c;">Haber</label>
+                <input type="text" name="haber" id="haberrrrr" step="0.001" oninput="sumarhhhhh()">
+                <input type="text" name="" id="haberrrrr2" step="0.001" oninput="sumarhhhhh()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="haberrrrr3" step="0.001" oninput="sumarhhhhh()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="haberrrrr4" step="0.001" oninput="sumarhhhhh()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="haberrrrr5" step="0.001" oninput="sumarhhhhh()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="haberrrrr6" step="0.001" oninput="sumarhhhhh()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="haberrrrr7" step="0.001" oninput="sumarhhhhh()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="haberrrrr8" step="0.001" oninput="sumarhhhhh()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="diarioooooo">
+            
+            <div id="partideeeeee">
+                <label for="partida" style= "color: #ff5a3c;">#Partida</label>
+                <input type="text" name="partida" id="partidaaaaaa" style= "height: 180px; width: 138px;">
+            </div>
+
+            <div id="dateeeeee">
+                <label for="fecha" style= "color: #ff5a3c;">Fecha</label>
+                <input type="text" name="fecha" id="fechaaaaaa" style= "height: 180px;">
+            </div>
+
+            <div id="acountttttt">
+                <label for="cuenta" style= "color: #ff5a3c;">Cuentas</label>
+                <input type="text" name="cuenta" id="cuentaaaaaa" style="width: 310px; height: 20px; position: absolute; left: 35px;">
+                <input type="text" name="" id="cuentaaaaaa2" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 23px; ">
+                <input type="text" name="" id="cuentaaaaaa3" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 46px; ">
+                <input type="text" name="" id="cuentaaaaaa4" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 69px; ">
+                <input type="text" name="" id="cuentaaaaaa5" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 92px; ">
+                <input type="text" name="" id="cuentaaaaaa6" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 115px; ">
+                <input type="text" name="" id="detalleeeeee7" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 138px; ">
+                <input type="text" name="" id="totallllll" readonly="readonly" placeholder="TOTAL" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 162px; ">
+            </div>
+
+            <div id="activeeeeee">
+                <label for="debe" style= "color: #ff5a3c;">Debe</label>
+                <input type="text" name="debe" id="debeeeeee" step="0.001" oninput="sumardddddd()">
+                <input type="text" name="" id="debeeeeee2" step="0.001" oninput="sumardddddd()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="debeeeeee3" step="0.001" oninput="sumardddddd()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="debeeeeee4" step="0.001" oninput="sumardddddd()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="debeeeeee5" step="0.001" oninput="sumardddddd()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="debeeeeee6" step="0.001" oninput="sumardddddd()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="debeeeeee7" step="0.001" oninput="sumardddddd()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="debeeeeee8" step="0.001" oninput="sumardddddd()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+
+            <div id="pasiveeeeee">
+                <label for="haber" style= "color: #ff5a3c;">Haber</label>
+                <input type="text" name="haber" id="haberrrrrr" step="0.001" oninput="sumarhhhhhh()">
+                <input type="text" name="" id="haberrrrrr2" step="0.001" oninput="sumarhhhhhh()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="haberrrrrr3" step="0.001" oninput="sumarhhhhhh()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="haberrrrrr4" step="0.001" oninput="sumarhhhhhh()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="haberrrrrr5" step="0.001" oninput="sumarhhhhhh()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="haberrrrrr6" step="0.001" oninput="sumarhhhhhh()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="haberrrrrr7" step="0.001" oninput="sumarhhhhhh()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="haberrrrrr8" step="0.001" oninput="sumarhhhhhh()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="diariooooooo">
+            
+            <div id="partideeeeeee">
+                <label for="partida" style= "color: #ff5a3c;">#Partida</label>
+                <input type="text" name="partida" id="partidaaaaaaa" style= "height: 180px; width: 138px;">
+            </div>
+
+            <div id="dateeeeeee">
+                <label for="fecha" style= "color: #ff5a3c;">Fecha</label>
+                <input type="text" name="fecha" id="fechaaaaaaa" style= "height: 180px;">
+            </div>
+
+            <div id="acounttttttt">
+                <label for="cuenta" style= "color: #ff5a3c;">Cuentas</label>
+                <input type="text" name="cuenta" id="cuentaaaaaaa" style="width: 310px; height: 20px; position: absolute; left: 35px;">
+                <input type="text" name="" id="cuentaaaaaaa2" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 23px; ">
+                <input type="text" name="" id="cuentaaaaaaa3" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 46px; ">
+                <input type="text" name="" id="cuentaaaaaaa4" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 69px; ">
+                <input type="text" name="" id="cuentaaaaaaa5" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 92px; ">
+                <input type="text" name="" id="cuentaaaaaaa6" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 115px; ">
+                <input type="text" name="" id="detalleeeeeee7" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 138px; ">
+                <input type="text" name="" id="totalllllll" readonly="readonly" placeholder="TOTAL" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 162px; ">
+            </div>
+
+            <div id="activeeeeeee">
+                <label for="debe" style= "color: #ff5a3c;">Debe</label>
+                <input type="text" name="debe" id="debeeeeeee" step="0.001" oninput="sumarddddddd()">
+                <input type="text" name="" id="debeeeeeee2" step="0.001" oninput="sumarddddddd()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="debeeeeeee3" step="0.001" oninput="sumarddddddd()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="debeeeeeee4" step="0.001" oninput="sumarddddddd()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="debeeeeeee5" step="0.001" oninput="sumarddddddd()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="debeeeeeee6" step="0.001" oninput="sumarddddddd()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="debeeeeeee7" step="0.001" oninput="sumarddddddd()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="debeeeeeee8" step="0.001" oninput="sumarddddddd()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+
+            <div id="pasiveeeeeee">
+                <label for="haber" style= "color: #ff5a3c;">Haber</label>
+                <input type="text" name="haber" id="haberrrrrrr" step="0.001" oninput="sumarhhhhhhh()">
+                <input type="text" name="" id="haberrrrrrr2" step="0.001" oninput="sumarhhhhhhh()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="haberrrrrrr3" step="0.001" oninput="sumarhhhhhhh()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="haberrrrrrr4" step="0.001" oninput="sumarhhhhhhh()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="haberrrrrrr5" step="0.001" oninput="sumarhhhhhhh()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="haberrrrrrr6" step="0.001" oninput="sumarhhhhhhh()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="haberrrrrrr7" step="0.001" oninput="sumarhhhhhhh()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="haberrrrrrr8" step="0.001" oninput="sumarhhhhhhh()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="diarioooooooo">
+            
+            <div id="partideeeeeeee">
+                <label for="partida" style= "color: #ff5a3c;">#Partida</label>
+                <input type="text" name="partida" id="partidaaaaaaaa" style= "height: 180px; width: 138px;">
+            </div>
+
+            <div id="dateeeeeeee">
+                <label for="fecha" style= "color: #ff5a3c;">Fecha</label>
+                <input type="text" name="fecha" id="fechaaaaaaaa" style= "height: 180px;">
+            </div>
+
+            <div id="acountttttttt">
+                <label for="cuenta" style= "color: #ff5a3c;">Cuentas</label>
+                <input type="text" name="cuenta" id="cuentaaaaaaaa" style="width: 310px; height: 20px; position: absolute; left: 35px;">
+                <input type="text" name="" id="cuentaaaaaaaa2" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 23px; ">
+                <input type="text" name="" id="cuentaaaaaaaa3" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 46px; ">
+                <input type="text" name="" id="cuentaaaaaaaa4" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 69px; ">
+                <input type="text" name="" id="cuentaaaaaaaa5" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 92px; ">
+                <input type="text" name="" id="cuentaaaaaaaa6" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 115px; ">
+                <input type="text" name="" id="detalleeeeeeee7" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 138px; ">
+                <input type="text" name="" id="totalllllll" readonly="readonly" placeholder="TOTAL" style="width: 310px; height: 20px; position: absolute; left: 35px; top: 162px; ">
+            </div>
+
+            <div id="activeeeeeeee">
+                <label for="debe" style= "color: #ff5a3c;">Debe</label>
+                <input type="text" name="debe" id="debeeeeeeee" step="0.001" oninput="sumardddddddd()">
+                <input type="text" name="" id="debeeeeeeee2" step="0.001" oninput="sumardddddddd()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="debeeeeeeee3" step="0.001" oninput="sumardddddddd()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="debeeeeeeee4" step="0.001" oninput="sumardddddddd()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="debeeeeeeee5" step="0.001" oninput="sumardddddddd()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="debeeeeeeee6" step="0.001" oninput="sumardddddddd()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="debeeeeeeee7" step="0.001" oninput="sumardddddddd()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="debeeeeeeee8" step="0.001" oninput="sumardddddddd()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+
+            <div id="pasiveeeeeeee">
+                <label for="haber" style= "color: #ff5a3c;">Haber</label>
+                <input type="text" name="haber" id="haberrrrrrrr" step="0.001" oninput="sumarhhhhhhhh()">
+                <input type="text" name="" id="haberrrrrrrr2" step="0.001" oninput="sumarhhhhhhhh()" style= "position: absolute; left: 0px; top: 23px;">
+                <input type="text" name="" id="haberrrrrrrr3" step="0.001" oninput="sumarhhhhhhhh()" style= "position: absolute; left: 0px; top: 46px;">
+                <input type="text" name="" id="haberrrrrrrr4" step="0.001" oninput="sumarhhhhhhhh()" style= "position: absolute; left: 0px; top: 69px;">
+                <input type="text" name="" id="haberrrrrrrr5" step="0.001" oninput="sumarhhhhhhhh()" style= "position: absolute; left: 0px; top: 92px;">
+                <input type="text" name="" id="haberrrrrrrr6" step="0.001" oninput="sumarhhhhhhhh()" style= "position: absolute; left: 0px; top: 115px;">
+                <input type="text" name="" id="haberrrrrrrr7" step="0.001" oninput="sumarhhhhhhhh()" style= "position: absolute; left: 0px; top: 138px;">
+                <input type="text" name="" id="haberrrrrrrr8" step="0.001" oninput="sumarhhhhhhhh()" readonly="readonly" style= "position: absolute; left: 0px; top: 162px;">
+            </div>
+        </div>
+    </form>
+
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+	</header>
+	<div class="capa"></div>
+        <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+	    <div class="cont-menu">
+            <nav>
+            <a href="index.html">Incio</a>
+            <a href="diario.html">Partidas de Ajuste</a>
+            <a href="mayor.html">Libro Mayor</a>
+            <a href="balanceinicial.html">Balance Inicial de Saldos</a>
+            <a href="balanceajustado.html">Balance de Saldos Ajustados</a>
+            <a href="#">Estado de Resultados</a>
+            <a href="#">Balance General</a>
+            <a href="#">Nosotros</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+	    </div>
+    </div>
+
+    
+    <table id="tabla">
+        <tr id="guardar">
+            <td style="color: #ff5a3c;"><strong>Guardar Como:</strong></td>
+            <td><input id="inputFileNameToSaveAs"></input></td>
+            <td><button class="boton" onclick="saveTextAsFile()">Guardar</button></td>
+        </tr>
+        <tr id="seleccionar">
+            <td style="color: #ff5a3c;"><strong>Seleccionar Archivo</strong></td>
+            <td><input type="file" id="fileToLoad">
+            <td><button class="boton2" onclick="loadFileAsText()">Cargar Archivo</button></td>
+        </tr>
+    </table>
+    <div class="titulo">
+        <p>Partidas de Ajustes</p>
+        <hr>
+    </div>
+
+    <div class="encabezado">
+        .
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <div class="encabezado2">
+        .
+    </div>
+</footer>
+</html>

@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #F0F0F0;
+}
+
+.encabezado {
+    background-color: #fff;
+    margin: 0;
+	padding: 0;
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    top: 0px;
+}
+
+.encabezado2 {
+    background-color: #fff;
+    margin: 0;
+	padding: 0;
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    top: 1500px;
+}
+
+#diario {
+    position: absolute;
+    top: 250px;
+    left: 110px;
+}
+
+#mayor {
+    position: absolute;
+    top: 250px;
+    left: 590px;
+}
+
+#balanceinicial {
+    position: absolute;
+    top: 250px;
+    left: 1080px;
+}
+
+#balanceajustado {
+    position: absolute;
+    top: 550px;
+    left: 590px;
+}
+
+#estado {
+    position: absolute;
+    top: 850px;
+    left: 110px;
+}
+
+#general {
+    position: absolute;
+    top: 850px;
+    left: 590px;
+}
+
+#nosotros {
+    position: absolute;
+    top: 850px;
+    left: 1080px;
+}
+
+.titulo {
+    position: absolute;
+    top: 80px;
+    left: 335px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: #ff5a3c;
+}
+
+.titulo hr {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 910px;
+    height: 3px;
+    background-color: #fff;
+    border: none;
+}

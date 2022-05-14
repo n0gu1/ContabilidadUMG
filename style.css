@@ -1,0 +1,1298 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    width: 138px;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+
+form .diario {
+    position: relative;
+    width: 915px;
+    height: 211px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 190px;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.diario {
+    position: relative;
+    height: 800px;
+}
+
+
+/* Mueve el input de la partida */
+.diario #partida {
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    text-align: center;
+    font-size: 50px;  
+}
+
+/* Tamaño de la Partida */
+#partide {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del input */
+.diario #partide label{
+    position: absolute;
+    left: 50px;
+}
+
+/* Mueve el input de la fecha */
+.diario #date {
+    position: absolute;
+    top: 20px;
+    left: 151px;
+}
+
+/* Tamaño de la Fecha */
+#date {
+    width: 152px;
+    height: 180px;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diario #date label{
+    position: absolute;
+    left: 50px;
+    top: -20px;
+}
+
+/* Mueve el input de la Cuenta */
+.diario #acount {
+    position: absolute;
+    top: 20px;
+    left: 264px;
+}
+
+/* Tamaño de la Fecha */
+#acount {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diario #acount label{
+    position: absolute;
+    left: 145px;
+    top: -20px;
+}
+
+/* Mueve el input de la Debe */
+.diario #active {
+    position: absolute;
+    top: 20px;
+    left: 614px;
+}
+
+/* Tamaño de la Debe */
+#active {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Debe */
+.diario #active label{
+    position: absolute;
+    left: 60px;
+    top: -20px;
+}
+
+/* Mueve el input de la Haber */
+.diario #pasive {
+    position: absolute;
+    top: 20px;
+    left: 764px;
+}
+
+/* Tamaño de la Haber */
+#pasive {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Haber */
+.diario #pasive label{
+    position: absolute;
+    left: 58px;
+    top: -20px;
+}
+
+/* Partida 2 */
+
+form .diarioo {
+    position: relative;
+    width: 915px;
+    height: 211px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 250px;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.diarioo {
+    position: relative;
+    height: 800px;
+}
+
+
+/* Mueve el input de la partida */
+.diarioo #partidaa {
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    text-align: center;
+    font-size: 50px;  
+}
+
+/* Tamaño de la Partida */
+#partidee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del input */
+.diarioo #partidee label{
+    position: absolute;
+    left: 50px;
+}
+
+/* Mueve el input de la fecha */
+.diarioo #datee {
+    position: absolute;
+    top: 20px;
+    left: 151px;
+}
+
+/* Tamaño de la Fecha */
+#datee {
+    width: 152px;
+    height: 180px;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diarioo #datee label{
+    position: absolute;
+    left: 50px;
+    top: -20px;
+}
+
+/* Mueve el input de la Cuenta */
+.diarioo #acountt {
+    position: absolute;
+    top: 20px;
+    left: 264px;
+}
+
+/* Tamaño de la Fecha */
+#acountt {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diarioo #acountt label{
+    position: absolute;
+    left: 145px;
+    top: -20px;
+}
+
+/* Mueve el input de la Debe */
+.diarioo #activee {
+    position: absolute;
+    top: 20px;
+    left: 614px;
+}
+
+/* Tamaño de la Debe */
+#activee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Debe */
+.diarioo #activee label{
+    position: absolute;
+    left: 60px;
+    top: -20px;
+}
+
+/* Mueve el input de la Haber */
+.diarioo #pasivee {
+    position: absolute;
+    top: 20px;
+    left: 764px;
+}
+
+/* Tamaño de la Haber */
+#pasivee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Haber */
+.diarioo #pasivee label{
+    position: absolute;
+    left: 58px;
+    top: -20px;
+}
+
+/* Partida 3 */
+
+form .diariooo {
+    position: relative;
+    width: 915px;
+    height: 211px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 310px;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.diariooo {
+    position: relative;
+    height: 800px;
+}
+
+
+/* Mueve el input de la partida */
+.diariooo #partidaaa {
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    text-align: center;
+    font-size: 50px;  
+}
+
+/* Tamaño de la Partida */
+#partideee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del input */
+.diariooo #partideee label{
+    position: absolute;
+    left: 50px;
+}
+
+/* Mueve el input de la fecha */
+.diariooo #dateee {
+    position: absolute;
+    top: 20px;
+    left: 151px;
+}
+
+/* Tamaño de la Fecha */
+#dateee {
+    width: 152px;
+    height: 180px;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diariooo #dateee label{
+    position: absolute;
+    left: 50px;
+    top: -20px;
+}
+
+/* Mueve el input de la Cuenta */
+.diariooo #acounttt {
+    position: absolute;
+    top: 20px;
+    left: 264px;
+}
+
+/* Tamaño de la Fecha */
+#acounttt {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diariooo #acounttt label{
+    position: absolute;
+    left: 145px;
+    top: -20px;
+}
+
+/* Mueve el input de la Debe */
+.diariooo #activeee {
+    position: absolute;
+    top: 20px;
+    left: 614px;
+}
+
+/* Tamaño de la Debe */
+#activeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Debe */
+.diariooo #activeee label{
+    position: absolute;
+    left: 60px;
+    top: -20px;
+}
+
+/* Mueve el input de la Haber */
+.diariooo #pasiveee {
+    position: absolute;
+    top: 20px;
+    left: 764px;
+}
+
+/* Tamaño de la Haber */
+#pasiveee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Haber */
+.diariooo #pasiveee label{
+    position: absolute;
+    left: 58px;
+    top: -20px;
+}
+
+/* Partida 4 */
+
+form .diarioooo {
+    position: relative;
+    width: 915px;
+    height: 211px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 370px;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.diarioooo {
+    position: relative;
+    height: 800px;
+}
+
+
+/* Mueve el input de la partida */
+.diarioooo #partidaaaa {
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    text-align: center;
+    font-size: 50px;  
+}
+
+/* Tamaño de la Partida */
+#partideeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del input */
+.diarioooo #partideeee label{
+    position: absolute;
+    left: 50px;
+}
+
+/* Mueve el input de la fecha */
+.diarioooo #dateeee {
+    position: absolute;
+    top: 20px;
+    left: 151px;
+}
+
+/* Tamaño de la Fecha */
+#dateeee {
+    width: 152px;
+    height: 180px;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diarioooo #dateeee label{
+    position: absolute;
+    left: 50px;
+    top: -20px;
+}
+
+/* Mueve el input de la Cuenta */
+.diarioooo #acountttt {
+    position: absolute;
+    top: 20px;
+    left: 264px;
+}
+
+/* Tamaño de la Fecha */
+#acountttt {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diarioooo #acountttt label{
+    position: absolute;
+    left: 145px;
+    top: -20px;
+}
+
+/* Mueve el input de la Debe */
+.diarioooo #activeeee {
+    position: absolute;
+    top: 20px;
+    left: 614px;
+}
+
+/* Tamaño de la Debe */
+#activeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Debe */
+.diarioooo #activeeee label{
+    position: absolute;
+    left: 60px;
+    top: -20px;
+}
+
+/* Mueve el input de la Haber */
+.diarioooo #pasiveeee {
+    position: absolute;
+    top: 20px;
+    left: 764px;
+}
+
+/* Tamaño de la Haber */
+#pasiveeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Haber */
+.diarioooo #pasiveeee label{
+    position: absolute;
+    left: 58px;
+    top: -20px;
+}
+
+/* Partida 5 */
+
+form .diariooooo {
+    position: relative;
+    width: 915px;
+    height: 211px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 430px;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.diariooooo {
+    position: relative;
+    height: 800px;
+}
+
+
+/* Mueve el input de la partida */
+.diariooooo #partidaaaaa {
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    text-align: center;
+    font-size: 50px;  
+}
+
+/* Tamaño de la Partida */
+#partideeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del input */
+.diariooooo #partideeeee label{
+    position: absolute;
+    left: 50px;
+}
+
+/* Mueve el input de la fecha */
+.diariooooo #dateeeee {
+    position: absolute;
+    top: 20px;
+    left: 151px;
+}
+
+/* Tamaño de la Fecha */
+#dateeeee {
+    width: 152px;
+    height: 180px;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diariooooo #dateeeee label{
+    position: absolute;
+    left: 50px;
+    top: -20px;
+}
+
+/* Mueve el input de la Cuenta */
+.diariooooo #acounttttt {
+    position: absolute;
+    top: 20px;
+    left: 264px;
+}
+
+/* Tamaño de la Fecha */
+#acounttttt {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diariooooo #acounttttt label{
+    position: absolute;
+    left: 145px;
+    top: -20px;
+}
+
+/* Mueve el input de la Debe */
+.diariooooo #activeeeee {
+    position: absolute;
+    top: 20px;
+    left: 614px;
+}
+
+/* Tamaño de la Debe */
+#activeeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Debe */
+.diariooooo #activeeeee label{
+    position: absolute;
+    left: 60px;
+    top: -20px;
+}
+
+/* Mueve el input de la Haber */
+.diariooooo #pasiveeeee {
+    position: absolute;
+    top: 20px;
+    left: 764px;
+}
+
+/* Tamaño de la Haber */
+#pasiveeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Haber */
+.diariooooo #pasiveeeee label{
+    position: absolute;
+    left: 58px;
+    top: -20px;
+}
+
+/* Partida 6 */
+
+form .diarioooooo {
+    position: relative;
+    width: 915px;
+    height: 211px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 500px;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.diarioooooo {
+    position: relative;
+    height: 800px;
+}
+
+
+/* Mueve el input de la partida */
+.diarioooooo #partidaaaaaa {
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    text-align: center;
+    font-size: 50px;  
+}
+
+/* Tamaño de la Partida */
+#partideeeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del input */
+.diarioooooo #partideeeeee label{
+    position: absolute;
+    left: 50px;
+}
+
+/* Mueve el input de la fecha */
+.diarioooooo #dateeeeee {
+    position: absolute;
+    top: 20px;
+    left: 151px;
+}
+
+/* Tamaño de la Fecha */
+#dateeeeee {
+    width: 152px;
+    height: 180px;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diarioooooo #dateeeeee label{
+    position: absolute;
+    left: 50px;
+    top: -20px;
+}
+
+/* Mueve el input de la Cuenta */
+.diarioooooo #acountttttt {
+    position: absolute;
+    top: 20px;
+    left: 264px;
+}
+
+/* Tamaño de la Fecha */
+#acountttttt {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diarioooooo #acountttttt label{
+    position: absolute;
+    left: 145px;
+    top: -20px;
+}
+
+/* Mueve el input de la Debe */
+.diarioooooo #activeeeeee {
+    position: absolute;
+    top: 20px;
+    left: 614px;
+}
+
+/* Tamaño de la Debe */
+#activeeeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Debe */
+.diarioooooo #activeeeeee label{
+    position: absolute;
+    left: 60px;
+    top: -20px;
+}
+
+/* Mueve el input de la Haber */
+.diarioooooo #pasiveeeeee {
+    position: absolute;
+    top: 20px;
+    left: 764px;
+}
+
+/* Tamaño de la Haber */
+#pasiveeeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Haber */
+.diarioooooo #pasiveeeeee label{
+    position: absolute;
+    left: 58px;
+    top: -20px;
+}
+
+
+/* Partida 7 */
+
+form .diariooooooo {
+    position: relative;
+    width: 915px;
+    height: 211px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 560px;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.diariooooooo {
+    position: relative;
+    height: 800px;
+}
+
+
+/* Mueve el input de la partida */
+.diariooooooo #partidaaaaaaa {
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    text-align: center;
+    font-size: 50px;  
+}
+
+/* Tamaño de la Partida */
+#partideeeeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del input */
+.diariooooooo #partideeeeeee label{
+    position: absolute;
+    left: 50px;
+}
+
+/* Mueve el input de la fecha */
+.diariooooooo #dateeeeeee {
+    position: absolute;
+    top: 20px;
+    left: 151px;
+}
+
+/* Tamaño de la Fecha */
+#dateeeeeee {
+    width: 152px;
+    height: 180px;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diariooooooo #dateeeeeee label{
+    position: absolute;
+    left: 50px;
+    top: -20px;
+}
+
+/* Mueve el input de la Cuenta */
+.diariooooooo #acounttttttt {
+    position: absolute;
+    top: 20px;
+    left: 264px;
+}
+
+/* Tamaño de la Fecha */
+#acounttttttt {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diariooooooo #acounttttttt label{
+    position: absolute;
+    left: 145px;
+    top: -20px;
+}
+
+/* Mueve el input de la Debe */
+.diariooooooo #activeeeeeee {
+    position: absolute;
+    top: 20px;
+    left: 614px;
+}
+
+/* Tamaño de la Debe */
+#activeeeeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Debe */
+.diariooooooo #activeeeeeee label{
+    position: absolute;
+    left: 60px;
+    top: -20px;
+}
+
+/* Mueve el input de la Haber */
+.diariooooooo #pasiveeeeeee {
+    position: absolute;
+    top: 20px;
+    left: 764px;
+}
+
+/* Tamaño de la Haber */
+#pasiveeeeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Haber */
+.diariooooooo #pasiveeeeeee label{
+    position: absolute;
+    left: 58px;
+    top: -20px;
+}
+
+/* Partida 8 */
+
+form .diarioooooooo {
+    position: relative;
+    width: 915px;
+    height: 211px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 620px;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.diarioooooooo {
+    position: relative;
+    height: 800px;
+}
+
+
+/* Mueve el input de la partida */
+.diarioooooooo #partidaaaaaaaa {
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    text-align: center;
+    font-size: 50px;  
+}
+
+/* Tamaño de la Partida */
+#partideeeeeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del input */
+.diarioooooooo #partideeeeeeee label{
+    position: absolute;
+    left: 50px;
+}
+
+/* Mueve el input de la fecha */
+.diarioooooooo #dateeeeeeee {
+    position: absolute;
+    top: 20px;
+    left: 151px;
+}
+
+/* Tamaño de la Fecha */
+#dateeeeeeee {
+    width: 152px;
+    height: 180px;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diarioooooooo #dateeeeeeee label{
+    position: absolute;
+    left: 50px;
+    top: -20px;
+}
+
+/* Mueve el input de la Cuenta */
+.diarioooooooo #acountttttttt {
+    position: absolute;
+    top: 20px;
+    left: 264px;
+}
+
+/* Tamaño de la Fecha */
+#acountttttttt {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del fecha */
+.diarioooooooo #acountttttttt label{
+    position: absolute;
+    left: 145px;
+    top: -20px;
+}
+
+/* Mueve el input de la Debe */
+.diarioooooooo #activeeeeeeee {
+    position: absolute;
+    top: 20px;
+    left: 614px;
+}
+
+/* Tamaño de la Debe */
+#activeeeeeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Debe */
+.diarioooooooo #activeeeeeeee label{
+    position: absolute;
+    left: 60px;
+    top: -20px;
+}
+
+/* Mueve el input de la Haber */
+.diarioooooooo #pasiveeeeeeee {
+    position: absolute;
+    top: 20px;
+    left: 764px;
+}
+
+/* Tamaño de la Haber */
+#pasiveeeeeeee {
+    width: 152;
+    height: 19;
+    position: absolute;
+}
+
+/* Titulo del Haber */
+.diarioooooooo #pasiveeeeeeee label{
+    position: absolute;
+    left: 58px;
+    top: -20px;
+}
+
+
+
+.titulo {
+    position: absolute;
+    top: 80px;
+    left: 335px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: #ff5a3c;
+}
+
+.titulo hr {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 910px;
+    height: 3px;
+    background-color: #fff;
+    border: none;
+}
+
+.encabezado {
+    background-color: #fff;
+    margin: 0;
+	padding: 0;
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    top: 0px;
+    z-index: -20;
+}
+   
+/* Tabla Guardar Archivo */
+
+#tabla{
+    position: absolute;
+    left: 540px;
+    top: 2400px;
+}
+
+/* Botones */
+
+.boton {
+    border: 1px solid #ff5a3c;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 25px;
+    font-size: 12px;
+    font-family: fantasy;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.75s;
+    position: relative;
+    overflow: hidden;
+    left: 10px;
+    font-size: 20px;
+}
+
+.boton {
+    color: #ff5a3c;
+}
+
+.boton:hover {
+    color: #ffffff;
+}
+
+.boton::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ff5a3c;
+    z-index: -1;
+    transition: 0.9s;
+}
+
+.boton::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.boton:hover:before {
+    height: 180%;
+}
+
+/* Boton 2 */
+
+.boton2 {
+    border: 1px solid #ff5a3c;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 25px;
+    font-size: 12px;
+    font-family: fantasy;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.75s;
+    position: relative;
+    overflow: hidden;
+    left: 10px;
+    font-size: 20px;
+}
+
+.boton2 {
+    color: #ff5a3c;
+}
+
+.boton2:hover {
+    color: #ffffff;
+}
+
+.boton2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ff5a3c;
+    z-index: -1;
+    transition: 0.9s;
+}
+
+.boton2::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.boton2:hover:before {
+    height: 180%;
+}
+
+.encabezado2 {
+    background-color: #fff;
+    margin: 0;
+	padding: 0;
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    top: 2700px;
+}
+
+/* Barra */
+
+.capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    top: 0;left: 0;
+}
+/*Estilos para el encabezado*/
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu label{
+    color: #ff5a3c;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: -30px;
+    left: 50px;
+}
+.logo img{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+    position: absolute;
+    top: -2px;
+    left: 60px;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(196, 196, 196, 0.5);
+    width: 100%;
+    height: 2700px;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #ff5a3c;
+    height: 2700px;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #d34830;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #2f7bb7;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*Fin de Menù lateral*/
+
+
+
+
+

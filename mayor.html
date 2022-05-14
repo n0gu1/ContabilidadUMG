@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mayor.css">
+    <title>Mayor</title>
+</head>
+<body>
+    <form action="">
+        <div class="contenedor">
+            <div id="mover">
+            
+                <input type="text" class="titulo" id="titulo1" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debe"  oninput="sumard()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debe2" oninput="sumard()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debe3" oninput="sumard()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debe4" oninput="sumard()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debe5" oninput="sumard()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debe6" oninput="sumard()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="total" oninput="sumard()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferencia" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haber" id="haber"  oninput="sumarh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haber" id="haber2" oninput="sumarh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haber" id="haber3" oninput="sumarh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haber" id="haber4" oninput="sumarh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haber" id="haber5" oninput="sumarh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haber" id="haber6" oninput="sumarh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haber" id="total2" oninput="sumarh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haber" id="diferencia2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorr">
+            <div id="moverr">
+            
+                <input type="text" class="titulo" id="titulo2" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debee"  oninput="sumardd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debee2" oninput="sumardd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debee3" oninput="sumardd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debee4" oninput="sumardd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debee5" oninput="sumardd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debee6" oninput="sumardd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totall" oninput="sumardd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberr"  oninput="sumarhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberr2" oninput="sumarhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberr3" oninput="sumarhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberr4" oninput="sumarhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberr5" oninput="sumarhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberr6" oninput="sumarhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totall2" oninput="sumarhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrr">
+            <div id="moverrr">
+            
+                <input type="text" class="titulo" id="titulo3" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeee"  oninput="sumarddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeee2" oninput="sumarddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeee3" oninput="sumarddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeee4" oninput="sumarddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeee5" oninput="sumarddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeee6" oninput="sumarddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totalll" oninput="sumarddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrr"  oninput="sumarhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrr2" oninput="sumarhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrr3" oninput="sumarhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrr4" oninput="sumarhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrr5" oninput="sumarhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrr6" oninput="sumarhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totalll2" oninput="sumarhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrr">
+            <div id="moverrrr">
+            
+                <input type="text" class="titulo" id="titulo4" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeee"  oninput="sumardddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeee2" oninput="sumardddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeee3" oninput="sumardddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeee4" oninput="sumardddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeee5" oninput="sumardddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeee6" oninput="sumardddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totallll" oninput="sumardddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrr"  oninput="sumarhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrr2" oninput="sumarhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrr3" oninput="sumarhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrr4" oninput="sumarhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrr5" oninput="sumarhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrr6" oninput="sumarhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totallll2" oninput="sumarhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrr">
+            <div id="moverrrrr">
+            
+                <input type="text" class="titulo" id="titulo5" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeee"  oninput="sumarddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeee2" oninput="sumarddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeee3" oninput="sumarddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeee4" oninput="sumarddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeee5" oninput="sumarddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeee6" oninput="sumarddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totalllll" oninput="sumarddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrr"  oninput="sumarhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrr2" oninput="sumarhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrr3" oninput="sumarhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrr4" oninput="sumarhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrr5" oninput="sumarhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrr6" oninput="sumarhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totalllll2" oninput="sumarhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrr">
+            <div id="moverrrrrr">
+            
+                <input type="text" class="titulo" id="titulo6" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeee"  oninput="sumardddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeee2" oninput="sumardddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeee3" oninput="sumardddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeee4" oninput="sumardddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeee5" oninput="sumardddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeee6" oninput="sumardddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totallllll" oninput="sumardddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrr"  oninput="sumarhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrr2" oninput="sumarhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrr3" oninput="sumarhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrr4" oninput="sumarhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrr5" oninput="sumarhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrr6" oninput="sumarhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totallllll2" oninput="sumarhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrr">
+            <div id="moverrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo7" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeee"  oninput="sumarddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeee2" oninput="sumarddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeee3" oninput="sumarddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeee4" oninput="sumarddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeee5" oninput="sumarddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeee6" oninput="sumarddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totalllllll" oninput="sumarddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrr"  oninput="sumarhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrr2" oninput="sumarhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrr3" oninput="sumarhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrr4" oninput="sumarhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrr5" oninput="sumarhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrr6" oninput="sumarhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totalllllll2" oninput="sumarhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrrr">
+            <div id="moverrrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo8" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeeee"  oninput="sumardddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeee2" oninput="sumardddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeee3" oninput="sumardddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeee4" oninput="sumardddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeee5" oninput="sumardddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeee6" oninput="sumardddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totallllllll" oninput="sumardddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrrr"  oninput="sumarhhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrr2" oninput="sumarhhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrr3" oninput="sumarhhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrr4" oninput="sumarhhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrr5" oninput="sumarhhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrr6" oninput="sumarhhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totallllllll2" oninput="sumarhhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrrrr">
+            <div id="moverrrrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo9" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeeeee"  oninput="sumarddddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeee2" oninput="sumarddddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeee3" oninput="sumarddddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeee4" oninput="sumarddddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeee5" oninput="sumarddddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeee6" oninput="sumarddddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totalllllllll" oninput="sumarddddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrrrr"  oninput="sumarhhhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrr2" oninput="sumarhhhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrr3" oninput="sumarhhhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrr4" oninput="sumarhhhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrr5" oninput="sumarhhhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrr6" oninput="sumarhhhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totalllllllll2" oninput="sumarhhhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrrrrr">
+            <div id="moverrrrrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo10" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeeeeee"  oninput="sumardddddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeee2" oninput="sumardddddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeee3" oninput="sumardddddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeee4" oninput="sumardddddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeee5" oninput="sumardddddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeee6" oninput="sumardddddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totallllllllll" oninput="sumardddddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrrrrr"  oninput="sumarhhhhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrr2" oninput="sumarhhhhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrr3" oninput="sumarhhhhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrr4" oninput="sumarhhhhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrr5" oninput="sumarhhhhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrr6" oninput="sumarhhhhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totallllllllll2" oninput="sumarhhhhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrrrrrr">
+            <div id="moverrrrrrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo11" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeeeeeee"  oninput="sumarddddddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeee2" oninput="sumarddddddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeee3" oninput="sumarddddddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeee4" oninput="sumarddddddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeee5" oninput="sumarddddddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeee6" oninput="sumarddddddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totalllllllllll" oninput="sumarddddddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrrrrrr"  oninput="sumarhhhhhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrr2" oninput="sumarhhhhhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrr3" oninput="sumarhhhhhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrr4" oninput="sumarhhhhhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrr5" oninput="sumarhhhhhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrr6" oninput="sumarhhhhhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totalllllllllll2" oninput="sumarhhhhhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrrrrrrr">
+            <div id="moverrrrrrrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo12" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeeeeeeee"  oninput="sumardddddddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeee2" oninput="sumardddddddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeee3" oninput="sumardddddddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeee4" oninput="sumardddddddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeee5" oninput="sumardddddddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeee6" oninput="sumardddddddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totallllllllllll" oninput="sumardddddddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrrrrrrr"  oninput="sumarhhhhhhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrr2" oninput="sumarhhhhhhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrr3" oninput="sumarhhhhhhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrr4" oninput="sumarhhhhhhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrr5" oninput="sumarhhhhhhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrr6" oninput="sumarhhhhhhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totallllllllllll2" oninput="sumarhhhhhhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrrrrrrrr">
+            <div id="moverrrrrrrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo13" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeeeeeeeee"  oninput="sumarddddddddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeee2" oninput="sumarddddddddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeee3" oninput="sumarddddddddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeee4" oninput="sumarddddddddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeee5" oninput="sumarddddddddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeee6" oninput="sumarddddddddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totalllllllllllll" oninput="sumarddddddddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrr"  oninput="sumarhhhhhhhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrr2" oninput="sumarhhhhhhhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrr3" oninput="sumarhhhhhhhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrr4" oninput="sumarhhhhhhhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrr5" oninput="sumarhhhhhhhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrr6" oninput="sumarhhhhhhhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totalllllllllllll2" oninput="sumarhhhhhhhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrrrrrrrrr">
+            <div id="moverrrrrrrrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo14" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeeeeeeeeee"  oninput="sumardddddddddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeee2" oninput="sumardddddddddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeee3" oninput="sumardddddddddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeee4" oninput="sumardddddddddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeee5" oninput="sumardddddddddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeee6" oninput="sumardddddddddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totallllllllllllll" oninput="sumardddddddddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaaaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrr"  oninput="sumarhhhhhhhhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrr2" oninput="sumarhhhhhhhhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrr3" oninput="sumarhhhhhhhhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrr4" oninput="sumarhhhhhhhhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrr5" oninput="sumarhhhhhhhhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrr6" oninput="sumarhhhhhhhhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totallllllllllllll2" oninput="sumarhhhhhhhhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaaaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrrrrrrrrrr">
+            <div id="moverrrrrrrrrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo15" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeee"  oninput="sumarddddddddddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeee2" oninput="sumarddddddddddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeee3" oninput="sumarddddddddddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeee4" oninput="sumarddddddddddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeee5" oninput="sumarddddddddddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeee6" oninput="sumarddddddddddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totalllllllllllllll" oninput="sumarddddddddddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaaaaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrr"  oninput="sumarhhhhhhhhhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrr2" oninput="sumarhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrr3" oninput="sumarhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrr4" oninput="sumarhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrr5" oninput="sumarhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrr6" oninput="sumarhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totalllllllllllllll2" oninput="sumarhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaaaaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrrrrrrrrrrr">
+            <div id="moverrrrrrrrrrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo16" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeee"  oninput="sumardddddddddddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeee2" oninput="sumardddddddddddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeee3" oninput="sumardddddddddddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeee4" oninput="sumardddddddddddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeee5" oninput="sumardddddddddddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeee6" oninput="sumardddddddddddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totallllllllllllllll" oninput="sumardddddddddddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaaaaaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrr"  oninput="sumarhhhhhhhhhhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrr2" oninput="sumarhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrr3" oninput="sumarhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrr4" oninput="sumarhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrr5" oninput="sumarhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrr6" oninput="sumarhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totallllllllllllllll2" oninput="sumarhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaaaaaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrrrrrrrrrrrr">
+            <div id="moverrrrrrrrrrrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo17" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeee"  oninput="sumarddddddddddddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeee2" oninput="sumarddddddddddddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeee3" oninput="sumarddddddddddddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeee4" oninput="sumarddddddddddddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeee5" oninput="sumarddddddddddddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeee6" oninput="sumarddddddddddddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totalllllllllllllllll" oninput="sumarddddddddddddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaaaaaaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrr"  oninput="sumarhhhhhhhhhhhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrr2" oninput="sumarhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrr3" oninput="sumarhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrr4" oninput="sumarhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrr5" oninput="sumarhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrr6" oninput="sumarhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totalllllllllllllllll2" oninput="sumarhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaaaaaaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+        <div class="contenedorrrrrrrrrrrrrrrrrr">
+            <div id="moverrrrrrrrrrrrrrrrr">
+            
+                <input type="text" class="titulo" id="titulo18" style=" position: absolute; top: 49px; left: 150px; width: 276px;">
+                
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeeee"  oninput="sumardddddddddddddddddd()" style=" position: absolute; top: 70px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeeee2" oninput="sumardddddddddddddddddd()" style=" position: absolute; top: 91px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeeee3" oninput="sumardddddddddddddddddd()" style=" position: absolute; top: 111px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeeee4" oninput="sumardddddddddddddddddd()" style=" position: absolute; top: 131px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeeee5" oninput="sumardddddddddddddddddd()" style=" position: absolute; top: 151px; left: 150px;">
+                <input type="text" class="debe" id="debeeeeeeeeeeeeeeeeee6" oninput="sumardddddddddddddddddd()" style=" position: absolute; top: 171px; left: 150px; border-bottom: 2px solid black;">
+                <input type="text" class="debe" id="totallllllllllllllllll" oninput="sumardddddddddddddddddd()" style=" position: absolute; top: 191px; left: 150px;">
+                <input type="text" class="debe" id="diferenciaaaaaaaaaaaaaaaaaa" style=" position: absolute; top: 211px; left: 150px;">
+
+
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrrr"  oninput="sumarhhhhhhhhhhhhhhhhhh()" style=" position: absolute; top: 70px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrrr2" oninput="sumarhhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 91px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrrr3" oninput="sumarhhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 111px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrrr4" oninput="sumarhhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 131px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrrr5" oninput="sumarhhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 151px; left: 288px;">
+                <input type="text" class="haberr" id="haberrrrrrrrrrrrrrrrrr6" oninput="sumarhhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 171px; left: 288px; border-bottom: 2px solid black;">
+                <input type="text" class="haberr" id="totallllllllllllllllll2" oninput="sumarhhhhhhhhhhhhhhhhhh()"  style=" position: absolute; top: 191px; left: 288px;">
+                <input type="text" class="haberr" id="diferenciaaaaaaaaaaaaaaaaaa2" style=" position: absolute; top: 211px; left: 288px;">
+
+                <hr style="width: 0.1px; height: 159px; display: inline-block; position: absolute; top: 65px; left: 287px; border: 2px solid black;">
+            </div>
+        </div>
+    </form>
+
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+	</header>
+	<div class="capa"></div>
+        <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+	    <div class="cont-menu">
+            <nav>
+            <a href="index.html">Incio</a>
+            <a href="diario.html">Partidas de Ajuste</a>
+            <a href="mayor.html">Libro Mayor</a>
+            <a href="balanceinicial.html">Balance Inicial de Saldos</a>
+            <a href="balanceajustado.html">Balance de Saldos Ajustados</a>
+            <a href="#">Estado de Resultados</a>
+            <a href="#">Balance General</a>
+            <a href="#">Nosotros</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+	    </div>
+    </div>
+
+    <div class="titulo3">
+        <p>Libro Mayor</p>
+        <hr>
+    </div>
+    
+
+    <div class="encabezado">
+        .
+    </div>
+
+    <script src="mayor.js" ></script>
+
+    <table id="tabla">
+        <tr id="guardar">
+            <td style="color: #ff5a3c;"><strong>Guardar Como:</strong></td>
+            <td><input id="inputFileNameToSaveAs"></input></td>
+            <td><button class="boton" onclick="saveTextAsFile()">Guardar</button></td>
+        </tr>
+        <tr id="seleccionar">
+            <td style="color: #ff5a3c;"><strong>Seleccionar Archivo</strong></td>
+            <td><input type="file" id="fileToLoad">
+            <td><button class="boton2" onclick="loadFileAsText()">Cargar Archivo</button></td>
+        </tr>
+    </table>
+    
+</body>
+<footer>
+    <div class="encabezado2">
+        .
+    </div>
+</footer>
+</html>

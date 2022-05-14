@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="balanceajustado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet"> 
+    <title>Balance de Saldos Ajustados</title>
+</head>
+<body>
+    
+    <div class="tabla">
+        <label for="cuenta" style= "color: #ff5a3c; position: absolute; top: 40px; left: 240px;">CUENTA</label>
+        <input type="text" name="cuenta" id="cuenta" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 80px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta1" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 125px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta2" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 170px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta3" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 215px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta4" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 260px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta5" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 305px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta6" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 350px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta7" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 395px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta8" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 440px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta9" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 485px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta10" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 530px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta11" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 575px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta12" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 620px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta13" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 665px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta14" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 710px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta15" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 755px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta16" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 800px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta17" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 845px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta18" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 890px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta19" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 935px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta20" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 980px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta21" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 1025px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta22" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 1070px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta23" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 1115px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta24" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 1160px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta25" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 1205px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta26" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 1250px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta27" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 1295px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta28" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 1340px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta29" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 1385px; outline: none;">
+        <input type="text" name="cuenta" id="cuenta30" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 1430px; outline: none;">
+        <input type="text" name="cuenta" id="total" readonly="readonly" placeholder="Sumas Iguales" style="width: 450px; height: 30px; position: absolute; left: 35px; top: 1475px; outline: none; text-align: center; font-weight: bold;">
+
+
+        <label for="debe" style= "color: #ff5a3c; position: absolute; top: 40px; left: 595px;">DEBE</label>
+        <input type="text" name="debe" id="debe"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 80px; outline: none;">
+        <input type="text" name="debe" id="debe1"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 125px; outline: none;">
+        <input type="text" name="debe" id="debe2"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 170px; outline: none;">
+        <input type="text" name="debe" id="debe3"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 215px; outline: none;">
+        <input type="text" name="debe" id="debe4"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 260px; outline: none;">
+        <input type="text" name="debe" id="debe5"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 305px; outline: none;">
+        <input type="text" name="debe" id="debe6"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 350px; outline: none;">
+        <input type="text" name="debe" id="debe7"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 395px; outline: none;">
+        <input type="text" name="debe" id="debe8"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 440px; outline: none;">
+        <input type="text" name="debe" id="debe9"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 485px; outline: none;">
+        <input type="text" name="debe" id="debe10"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 530px; outline: none;">
+        <input type="text" name="debe" id="debe11"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 575px; outline: none;">
+        <input type="text" name="debe" id="debe12"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 620px; outline: none;">
+        <input type="text" name="debe" id="debe13"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 665px; outline: none;">
+        <input type="text" name="debe" id="debe14"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 710px; outline: none;">
+        <input type="text" name="debe" id="debe15"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 755px; outline: none;">
+        <input type="text" name="debe" id="debe16"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 800px; outline: none;">
+        <input type="text" name="debe" id="debe17"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 845px; outline: none;">
+        <input type="text" name="debe" id="debe18"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 890px; outline: none;">
+        <input type="text" name="debe" id="debe19"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 935px; outline: none;">
+        <input type="text" name="debe" id="debe20"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 980px; outline: none;">
+        <input type="text" name="debe" id="debe21"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 1025px; outline: none;">
+        <input type="text" name="debe" id="debe22"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 1070px; outline: none;">
+        <input type="text" name="debe" id="debe23"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 1115px; outline: none;">
+        <input type="text" name="debe" id="debe24"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 1160px; outline: none;">
+        <input type="text" name="debe" id="debe25"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 1205px; outline: none;">
+        <input type="text" name="debe" id="debe26"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 1250px; outline: none;">
+        <input type="text" name="debe" id="debe27"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 1295px; outline: none;">
+        <input type="text" name="debe" id="debe28"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 1340px; outline: none;">
+        <input type="text" name="debe" id="debe29"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 1385px; outline: none;">
+        <input type="text" name="debe" id="debe30"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 1430px; outline: none;">
+        <input type="text" name="cuenta" id="total2"  step="0.001" oninput="sumard()" style="width: 200px; height: 30px; position: absolute; left: 510px; top: 1475px; outline: none; text-align: center; font-weight: bold;">
+
+        <label for="haber" style= "color: #ff5a3c; position: absolute; top: 40px; left: 820px;">HABER</label>
+        <input type="text" name="haber" id="haber" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 80px; outline: none;">
+        <input type="text" name="haber" id="haber1" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 125px; outline: none;">
+        <input type="text" name="haber" id="haber2" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 170px; outline: none;">
+        <input type="text" name="haber" id="haber3" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 215px; outline: none;">
+        <input type="text" name="haber" id="haber4" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 260px; outline: none;">
+        <input type="text" name="haber" id="haber5" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 305px; outline: none;">
+        <input type="text" name="haber" id="haber6" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 350px; outline: none;">
+        <input type="text" name="haber" id="haber7" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 395px; outline: none;">
+        <input type="text" name="haber" id="haber8" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 440px; outline: none;">
+        <input type="text" name="haber" id="haber9" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 485px; outline: none;">
+        <input type="text" name="haber" id="haber10" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 530px; outline: none;">
+        <input type="text" name="haber" id="haber11" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 575px; outline: none;">
+        <input type="text" name="haber" id="haber12" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 620px; outline: none;">
+        <input type="text" name="haber" id="haber13" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 665px; outline: none;">
+        <input type="text" name="haber" id="haber14" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 710px; outline: none;">
+        <input type="text" name="haber" id="haber15" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 755px; outline: none;">
+        <input type="text" name="haber" id="haber16" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 800px; outline: none;">
+        <input type="text" name="haber" id="haber17" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 845px; outline: none;">
+        <input type="text" name="haber" id="haber18" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 890px; outline: none;">
+        <input type="text" name="haber" id="haber19" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 935px; outline: none;">
+        <input type="text" name="haber" id="haber20" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 980px; outline: none;">
+        <input type="text" name="haber" id="haber21" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 1025px; outline: none;">
+        <input type="text" name="haber" id="haber22" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 1070px; outline: none;">
+        <input type="text" name="haber" id="haber23" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 1115px; outline: none;">
+        <input type="text" name="haber" id="haber24" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 1160px; outline: none;">
+        <input type="text" name="haber" id="haber25" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 1205px; outline: none;">
+        <input type="text" name="haber" id="haber26" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 1250px; outline: none;">
+        <input type="text" name="haber" id="haber27" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 1295px; outline: none;">
+        <input type="text" name="haber" id="haber28" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 1340px; outline: none;">
+        <input type="text" name="haber" id="haber29" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 1385px; outline: none;">
+        <input type="text" name="haber" id="haber30" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 1430px; outline: none;">
+        <input type="text" name="cuenta" id="total3" step="0.001" oninput="sumarh()" style="width: 200px; height: 30px; position: absolute; left: 740px; top: 1475px; outline: none; text-align: center; font-weight: bold;">
+
+    </div>
+    
+
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+	</header>
+	<div class="capa"></div>
+        <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+	    <div class="cont-menu">
+            <nav>
+            <a href="index.html">Incio</a>
+            <a href="diario.html">Partidas de Ajuste</a>
+            <a href="mayor.html">Libro Mayor</a>
+            <a href="balanceinicial.html">Balance Inicial de Saldos</a>
+            <a href="balanceajustado.html">Balance de Saldos Ajustados</a>
+            <a href="#">Estado de Resultados</a>
+            <a href="#">Balance General</a>
+            <a href="#">Nosotros</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+	    </div>
+    </div>
+
+    
+    <table id="tabla">
+        <tr id="guardar">
+            <td style="color: #ff5a3c;"><strong>Guardar Como:</strong></td>
+            <td><input id="inputFileNameToSaveAs"></input></td>
+            <td><button class="boton" onclick="saveTextAsFile()">Guardar</button></td>
+        </tr>
+        <tr id="seleccionar">
+            <td style="color: #ff5a3c;"><strong>Seleccionar Archivo</strong></td>
+            <td><input type="file" id="fileToLoad">
+            <td><button class="boton2" onclick="loadFileAsText()">Cargar Archivo</button></td>
+        </tr>
+    </table>
+    <div class="titulo">
+        <p>Balance De Saldos Ajustados</p>
+        <hr>
+    </div>
+
+    <div class="encabezado">
+        .
+    </div>
+
+    
+
+    <script src="balanceajustado.js"></script>
+</body>
+
+<footer>
+    <div class="encabezado2">
+        .
+    </div>
+</footer>
+</html>
